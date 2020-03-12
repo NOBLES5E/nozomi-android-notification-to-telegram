@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        applicationId "com.lian.nozomi_notification_to_telegram"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 86
+        versionName "0.86"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "${variant.applicationId}.apk"
+                }
+            }
+        }
+    }
+}
+
+ext {
+    smackVersion = "4.1.6"
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.github.pengrad:java-telegram-bot-api:4.4.0'
+}
+
+configurations {
+    all*.exclude group: 'xpp3', module: 'xpp3'
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="warning_don_t_create_a_notification_forwarding_loop">Warning: don\'t create a notification forwarding loop.</string>
+    <string name="telegram_bot_token">Telegram Bot Token</string>
+    <string name="telegram_chat_id">Telegram Chat ID</string>
+</resources>
