@@ -6,3 +6,8 @@ This App sends all Android text notifications to a Telegram chat.
 
 Download the `.apk` file from the release page.
 
+## Usage
+
+Input your Telegram Bot token and your chatroom ID in the text fields, and enjoy!
+
+![](./figures/main.png)
