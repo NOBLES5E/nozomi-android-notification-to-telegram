@@ -10,4 +10,4 @@ Download the `.apk` file from the release page.
 
 Input your Telegram Bot token and your chatroom ID in the text fields, and enjoy!
 
-![](./figures/main.png)
+<img src="./figures/main.png" width="250px"/>
